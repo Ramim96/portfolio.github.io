@@ -1,0 +1,169 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/* Projects section container */
+main.portfolio-content div.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: rgba(33, 37, 41, 1);
+}
+
+div.projects-container p.projects-title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+div.projects-container div.projects-list-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 2%;
+    width: 100%;
+    height: auto;
+}
+
+div.projects-list-container div.project-item {
+    margin: 5%;
+    padding: 0;
+    width: 90%;
+    height: auto;
+}
+
+div.project-item div.card-body p.card-title, p.card-text {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    color:rgba(33, 37, 41, 1);
+}
+
+div.project-item div.card-body p.card-text {
+    letter-spacing: 0.1em;
+    color:rgba(33, 37, 41, 1);
+}
+
+div.card-body a.project-link img {
+    transition: all 0.8s;
+}
+
+div.card-body a.project-link img:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
+}
+
+div.card-body p.card-title {
+    margin: 4% 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.card-body p.card-text {
+    font-size: 1em;
+}
+
+div.card-body a.link-btn {
+    display: block;
+    margin: 5% auto 2% auto;
+    border: none;
+    width: 90%;
+    height: 9vh;
+    text-decoration: none;
+}
+
+a.link-btn button.btn {
+    display: block;
+    margin: 5% auto 2% auto;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    background: linear-gradient(to left, #3C096C 0%, #5A189A 100%) !important;
+}
+
+/* Media queries */
+@media only screen and (min-width: 360px) {
+    /* Projects style */
+}
+
+@media only screen and (min-width: 460px) {
+    /* Projects style */
+    div.projects-container p.projects-title {
+        padding: 2%;
+    }
+
+    /* Project item style */
+    div.card-body p.card-title {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    /* Projects style */
+    div.projects-container p.projects-title {
+        font-size: 4em;
+        letter-spacing: 0.05;
+    }
+
+    /* Project item style */
+    div.projects-list-container div.project-item {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Projects style */
+
+    /* Project item style */
+    div.projects-list-container div.project-item {
+        margin: 2%;
+        width: 45%;
+    }
+
+    div.card-body p.card-title {
+        font-size: 1.8em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Projects style */
+    div.projects-container p.projects-title {
+        font-size: 4.5em;
+    }
+
+    /* Project item style */
+    div.projects-list-container div.project-item {
+        margin: 1%;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Projects style */
+
+    /* Project item style */
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Projects style */
+
+    /* Project item style */
+    div.projects-list-container div.project-item {
+        margin: 2%;
+        width: 25%;
+    }
+}

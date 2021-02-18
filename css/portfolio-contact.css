@@ -1,0 +1,125 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/* Contact section style */
+main.portfolio-content div.contact-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background-image: url("../assets/images/Background_16.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.contact-container p.contact-details-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Contact form style */
+div.row div.contact-form-container {
+    border-radius: 10px;
+    width: 95%;
+    height: auto;
+    background-color:rgba(255, 255, 255, 0.6);
+}
+
+form div.control-group div.controls input.form-control {
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    background-color:rgba(33, 37, 41, 0.6);
+}
+
+form div.control-group div.controls textarea.form-control {
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    color: rgba(255, 255, 255, 1);
+    background-color:rgba(33, 37, 41, 0.6);
+}
+
+form div.control-group div.controls input.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+form div.btn-container button.btn {
+    border: none;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to left, #3C096C 0%, #5A189A 100%) !important;
+}
+
+/* Media queries */
+@media only screen and (min-width: 360px) {
+    /* Icon style */
+
+    /* Details style */
+}
+
+@media only screen and (min-width: 460px) {
+    /* Contact form style */
+    form div.btn-container button.btn {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    /* Contact form style */
+    div.row div.contact-form-container {
+        width: 75%;
+    }
+
+    div.contact-container p.contact-details-title {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Contact form style */
+    div.row div.contact-form-container {
+        width: 60%;
+    }
+
+    form div.btn-container button.btn {
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Contact form style */
+    div.contact-container p.contact-details-title {
+        font-size: 4.5em;
+    }   
+
+    div.row div.contact-form-container {
+        width: 50%;
+    }
+
+    form div.btn-container button.btn {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Contact form style */
+    div.row div.contact-form-container {
+        width: 35%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Contact form style */
+    form div.btn-container button.btn {
+        width: 50%;
+    }
+}
