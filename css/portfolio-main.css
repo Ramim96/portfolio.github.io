@@ -216,6 +216,25 @@ div.copyrights-container p {
     font-family: 'Rubik', sans-serif;
 }
 
+/* Web-kit scrollbar */
+/* Web-kit scrollbar */
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 2px;
+    background: linear-gradient(to left, #3C096C 0%, #5A189A 100%);
+}
+
 /* Media queries */
 @media only screen and (min-width: 360px) {
     /* Logo image style */
