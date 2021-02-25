@@ -125,7 +125,6 @@ div.container-fluid a.navbar-brand {
 }
 
 div.container-fluid div.collapse ul.navbar-nav {
-    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -221,6 +220,7 @@ div.copyrights-container p {
 ::-webkit-scrollbar-track
 {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
 	background-color: #F5F5F5;
 }
 
@@ -395,7 +395,7 @@ div.copyrights-container p {
     /* Navabar style */
     div.container-fluid div.collapse ul.navbar-nav {
         flex-direction: row;
-        width: 60%;
+        width: 70%;
     }
 
     ul.nav-pills > li {
@@ -455,16 +455,18 @@ div.copyrights-container p {
         top: 65%;
     }
 
+     /* Navabar style */
+    div.container-fluid div.collapse ul.navbar-nav {
+        flex-direction: row;
+        width: 65%;
+    }
+
     div.carousel-inner div.carousel-item p.text-item {
         font-size: 3.5em;
     }
-
-    /* Footer section style */
 
     /* Contact details section style */
     div.contact-details-info-container div.email-info-container, div.phone-info-container {
         width: 20%;
     }
-
-    /* Social media details section style */
 }

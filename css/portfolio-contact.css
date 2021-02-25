@@ -19,7 +19,7 @@ main.portfolio-content div.contact-container {
 
 div.contact-container p.contact-details-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
     color: rgba(255, 255, 255, 1);
@@ -98,7 +98,7 @@ form div.btn-container button.btn {
 @media only screen and (min-width: 992px) {
     /* Contact form style */
     div.contact-container p.contact-details-title {
-        font-size: 4.5em;
+        font-size: 3.5em;
     }   
 
     div.row div.contact-form-container {

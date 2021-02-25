@@ -36,7 +36,7 @@ div.soft-skills-container p.soft-skills-title {
     width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
     color: rgba(255, 255, 255, 1);
@@ -57,15 +57,15 @@ div.soft-skills-container div.skill {
     border-radius: 5px;
     width: 90%;
     height: auto;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.9);
+    /* backdrop-filter: blur(5px); */
 }
 
 div.skill p.skill-icon {
     margin: 0;
     padding: 4% 0;
     font-size: 3em;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 0.8);
 }
 
 div.skill p.skill-title {
@@ -74,14 +74,16 @@ div.skill p.skill-title {
     width: 90%;
     font-size: 1.6em;
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(123, 44, 191, 0.8);
+    background-color: rgba(123, 44, 191, 0.9);
 }
 
 div.skill p.skill-info {
     margin: 0;
     padding: 5% 5%;
-    letter-spacing: 0.1em;
-    color:rgba(255, 255, 255, 1);
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color:rgba(0, 0, 0, 1);
 }
 
 /* Technical skills style */
@@ -102,7 +104,7 @@ div.tech-skills-container p.tech-skills-title {
     width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
     color: rgba(255, 255, 255, 1);
@@ -130,8 +132,8 @@ div.tech-skills div.skill-item {
     border: none;
     width: 45%;
     height: 22vh;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.9);
+    /* backdrop-filter: blur(5px); */
 }
 
 div.skill-item div.tech-skill-icon {
@@ -150,9 +152,7 @@ div.skill-item div.tech-skill-icon img {
 
 /* Media queries */
 @media only screen and (min-width: 360px) {
-    /* Soft skills style */
-
-    /* Technical skills style */
+   
 }
 
 @media only screen and (min-width: 460px) {
@@ -244,7 +244,7 @@ div.skill-item div.tech-skill-icon img {
     }
 
     div.soft-skills-container p.soft-skills-title {
-        font-size: 4.5em;
+        font-size: 3.5em;
     }
 
     /* Technical skills style */
@@ -258,7 +258,7 @@ div.skill-item div.tech-skill-icon img {
     }
 
     div.tech-skills-container p.tech-skills-title {
-        font-size: 4.5em;  
+        font-size: 3.5em;  
     }
 }
 

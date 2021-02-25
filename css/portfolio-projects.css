@@ -15,7 +15,7 @@ div.projects-container p.projects-title {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
     color: rgba(255, 255, 255, 1);
@@ -48,9 +48,15 @@ div.project-item div.card-body p.card-title, p.card-text {
     color:rgba(33, 37, 41, 1);
 }
 
+div.project-item div.card-body p.card-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
 div.project-item div.card-body p.card-text {
-    letter-spacing: 0.1em;
-    color:rgba(33, 37, 41, 1);
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
 }
 
 div.card-body a.project-link img {
@@ -89,7 +95,7 @@ a.link-btn button.btn {
     width: 100%;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.4em;
     font-weight: bold;
     letter-spacing: 0.1em;
     background: linear-gradient(to left, #3C096C 0%, #5A189A 100%) !important;
@@ -126,8 +132,6 @@ a.link-btn button.btn {
 }
 
 @media only screen and (min-width: 768px) {
-    /* Projects style */
-
     /* Project item style */
     div.projects-list-container div.project-item {
         margin: 2%;
@@ -142,7 +146,7 @@ a.link-btn button.btn {
 @media only screen and (min-width: 992px) {
     /* Projects style */
     div.projects-container p.projects-title {
-        font-size: 4.5em;
+        font-size: 3.5em;
     }
 
     /* Project item style */
@@ -153,14 +157,10 @@ a.link-btn button.btn {
 }
 
 @media only screen and (min-width: 1024px) {
-    /* Projects style */
-
-    /* Project item style */
+   
 }
 
 @media only screen and (min-width: 1200px) {
-    /* Projects style */
-
     /* Project item style */
     div.projects-list-container div.project-item {
         margin: 2%;
