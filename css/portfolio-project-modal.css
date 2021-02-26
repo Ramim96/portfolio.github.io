@@ -45,20 +45,13 @@ div.modal-body ul.project-tools li.project-tool {
     color: rgba(255, 255, 255, 1);
 }
 
-div.modal-content div.modal-footer button.btn {
-    width: 40%;
-}
-
-div.modal-footer button.btn {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    color: rgba(255, 255, 255, 1);
-}
-
-button.btn a.link-btn {
+div.modal-content div.modal-footer a.btn  {
     text-decoration: none;
-    font-size: 1em;
+}
+
+div.modal-footer a.btn, button.btn  {
+    width: 30%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
     letter-spacing: 0.05em;
-    color: rgba(255, 255, 255, 1);
 }
