@@ -16,6 +16,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/portfolio-main.css" type="text/css" />
+    <link rel="stylesheet" href="./css/portfolio-project-modal.css" type="text/css" />
     <link rel="stylesheet" href="./css/portfolio-about.css" type="text/css" />
     <link rel="stylesheet" href="./css/portfolio-timeline.css" type="text/css" />
     <link rel="stylesheet" href="./css/portfolio-skills.css" type="text/css" />
@@ -29,6 +30,115 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" tabindex="0">
+    <!-- Modal for guess the word game project -->
+    <div class="modal fade" id="guessTheWordGameProj" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Guess The Word</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="section-title">Introduction</h5>
+                    <p class="project-details">
+                        The project is a simple guess the word game, where the player will be 
+                        provided with 8 lifes.
+                        <br />
+                        <br />
+                        The user must submit only one character, otherwise error messages will be thrown
+                        underneath the letters output (no life will be deducted). 
+                    </p>
+                    <h5 class="section-title">Tech-Stack</h5>
+                    <ul class="project-tools">
+                        <li class="project-tool">HTML</li>
+                        <li class="project-tool">CSS</li>
+                        <li class="project-tool">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center align-items-center">
+                    <button type="button" class="btn btn-success">
+                        <a href="https://ramim96.github.io/javascript.github.io/GuessTheWordGame/" 
+                           target="_blank" class="link-btn" rel="noopener noreferrer">Demo</a>
+                    </button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for guess the word game project -->
+    <div class="modal fade" id="expenseTrackerProj" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Expense Tracker</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="section-title">Introduction</h5>
+                    <p class="project-details">
+                        The project is designed to allow the user to insert items that have
+                        been either purchased or sold. 
+                        <br />
+                        <br />
+                        The user needs to provide the details in the bottom section; respectively,
+                        the item name, the cost, that can be a decimal number, and select either the
+                        expense or earning option.
+                        <br />
+                        <br />
+                        The project will store the items, and the respective data, in the local-storage 
+                        of the browser rendering the project itself.
+                        <br />
+                        Since it is the local-storage, the data will be persistent unless the user cleans it
+                        from the dev-tools or removes the items from the project. 
+                    </p>
+                    <h5 class="section-title">Tech-Stack</h5>
+                    <ul class="project-tools">
+                        <li class="project-tool">HTML</li>
+                        <li class="project-tool">CSS</li>
+                        <li class="project-tool">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center align-items-center">
+                    <button type="button" class="btn btn-success">
+                        <a href="https://ramim96.github.io/javascript.github.io/ExpenseTracker/" target="_blank"
+                            class="link-btn" rel="noopener noreferrer">Demo</a>
+                    </button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for guess the word game project -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Guess The Word</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="section-title">Introduction</h5>
+                    <p class="project-details">
+                        To be confirmed
+                    </p>
+                    <h5 class="section-title">Tech-Stack</h5>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center align-items-center">
+                    <button type="button" class="btn btn-success">
+                        <a href="#" target="_blank"
+                            class="link-btn" rel="noopener noreferrer">Demo</a>
+                    </button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Home-Header section -->
     <div id="home" class="header-welcome-section container-fluid rellax" data-rellax-speed="-2">
         <div class="header-welcome">
@@ -355,21 +465,24 @@
             <p class="projects-title mt-5" data-aos="fade-left" data-aos-duration="1200">My Projects</p>
 
             <div class="projects-list-container">
-                <div class="project-item" data-aos="fade-up" data-aos-duration="1200">
+                <div class="project-item"data-aos="fade-up" data-aos-duration="1200">
                     <div class="card">
                         <div class="card-body">
-                            <a href="https://ramim96.github.io/javascript.github.io/GuessTheWordGame/"  target="_blank" class="project-link" rel="noopener noreferrer">
+                            <!-- 
+                                To make the image redirect to the project, uncomment the section below and change the CSS
+                                In the CSS you must uncomment two styles and comment the two following below
+                            -->
+                            <!-- <a href="https://ramim96.github.io/javascript.github.io/GuessTheWordGame/"  target="_blank" class="project-link" rel="noopener noreferrer">
                                 <img src="./assets/images/GuessTheWord.png" class="card-img" alt="Guess The Word">
-                            </a>
+                            </a> -->
+
+                            <img src="./assets/images/GuessTheWord.png" class="card-img" alt="Guess The Word" data-bs-toggle="modal" data-bs-target="#guessTheWordGameProj" />
                             
-                            <p class="card-title">Guess The Word</p>
-                            <p class="card-text">
-                                A simple game designed and implemented through the use of HTML5,
-                                CSS3 and Vanilla Javascript.
-                            </p>
+                            <p class="card-title" data-bs-toggle="modal" data-bs-target="#guessTheWordGameProj">Guess The Word</p>
+                            <p class="card-text" data-bs-toggle="modal" data-bs-target="#guessTheWordGameProj">HTML, CSS, JavaScript</p>
 
                             <a href="https://ramim96.github.io/javascript.github.io/GuessTheWordGame/" target="_blank" class="link-btn" rel="noopener noreferrer">
-                                <button class="btn btn-primary">View</button>
+                                <button class="btn btn-primary">Demo</button>
                             </a>
                         </div>
                     </div>
@@ -377,18 +490,17 @@
                 <div class="project-item" data-aos="fade-up" data-aos-duration="1500">
                     <div class="card">
                         <div class="card-body">
-                            <a href="https://ramim96.github.io/javascript.github.io/ExpenseTracker/" target="_blank" class="project-link" rel="noopener noreferrer">
+                            <!-- <a href="https://ramim96.github.io/javascript.github.io/ExpenseTracker/" target="_blank" class="project-link" rel="noopener noreferrer">
                                 <img src="./assets/images/ExpenseTracker.png" class="card-img" alt="Expense Tracker">
-                            </a>
+                            </a> -->
 
-                            <p class="card-title">Expense Tracker</p>
-                            <p class="card-text">
-                                An user expense tracker application designed and implemented
-                                with HTML5, CSS, and JavaScript.
-                            </p>
+                            <img src="./assets/images/ExpenseTracker.png" class="card-img" alt="Expense Tracker" data-bs-toggle="modal" data-bs-target="#expenseTrackerProj" />
+
+                            <p class="card-title" data-bs-toggle="modal" data-bs-target="#expenseTrackerProj">Expense Tracker</p>
+                            <p class="card-text" data-bs-toggle="modal" data-bs-target="#expenseTrackerProj">HTML, CSS, JavaScript</p>
 
                             <a href="https://ramim96.github.io/javascript.github.io/ExpenseTracker/" target="_blank" class="link-btn" rel="noopener noreferrer">
-                                <button class="btn btn-primary">View</button>
+                                <button class="btn btn-primary">Demo</button>
                             </a>
                         </div>
                     </div>
@@ -396,18 +508,19 @@
                 <div class="project-item" data-aos="fade-up" data-aos-duration="1500">
                     <div class="card">
                         <div class="card-body">
-                            <a href="#" class="project-link">
+                            <!-- <a href="#" class="project-link">
                                 <img src="./assets/images/Background_1.jpg" class="card-img" alt="Guess The Word">
-                            </a>
+                            </a> -->
+                            <img src="./assets/images/Background_1.jpg" class="card-img" alt="Guess The Word" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  />
                             
-                            <p class="card-title">Sample</p>
-                            <p class="card-text">
+                            <p class="card-title" data-bs-toggle="modal" data-bs-target="#staticBackdrop" >Sample</p>
+                            <!-- <p class="card-text">
                                 Empty slot for a new project to be placed.
                                 The project will be a back-end application.
-                            </p>
+                            </p> -->
 
                             <a href="#" class="link-btn">
-                                <button class="btn btn-primary">View</button>
+                                <button class="btn btn-primary">Demo</button>
                             </a>
                         </div>
                     </div>

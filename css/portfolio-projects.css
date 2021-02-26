@@ -59,11 +59,24 @@ div.project-item div.card-body p.card-text {
     letter-spacing: 0.05em;
 }
 
-div.card-body a.project-link img {
+/* 
+    Use the commented style-sheet if you need the 
+    image to link to the respective project
+*/
+/* div.card-body a.project-link img {
     transition: all 0.8s;
 }
 
 div.card-body a.project-link img:hover {
+    opacity: 0.6;
+    transform: scale(1.05);
+} */
+
+div.card-body img {
+    transition: all 0.8s;
+}
+
+div.card-body img:hover {
     opacity: 0.6;
     transform: scale(1.05);
 }
