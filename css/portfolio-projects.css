@@ -46,6 +46,7 @@ div.project-item div.card-body p.card-title, p.card-text {
     align-items: center;
     font-family: 'Rubik', sans-serif;
     color:rgba(33, 37, 41, 1);
+    cursor: pointer;
 }
 
 div.project-item div.card-body p.card-title {
