@@ -46,18 +46,19 @@ div.project-item div.card-body p.card-title, p.card-text {
     align-items: center;
     font-family: 'Rubik', sans-serif;
     color:rgba(33, 37, 41, 1);
-    cursor: pointer;
 }
 
 div.project-item div.card-body p.card-title {
     font-size: 2em;
     font-weight: bold;
+    cursor: pointer;
 }
 
 div.project-item div.card-body p.card-text {
     font-size: 1.1em;
     font-weight: bold;
     letter-spacing: 0.05em;
+    cursor: pointer;
 }
 
 /* 
