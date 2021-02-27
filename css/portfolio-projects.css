@@ -51,14 +51,12 @@ div.project-item div.card-body p.card-title, p.card-text {
 div.project-item div.card-body p.card-title {
     font-size: 2em;
     font-weight: bold;
-    cursor: pointer;
 }
 
 div.project-item div.card-body p.card-text {
     font-size: 1.1em;
     font-weight: bold;
     letter-spacing: 0.05em;
-    cursor: pointer;
 }
 
 /* 
@@ -88,10 +86,12 @@ div.card-body p.card-title {
     font-size: 1.6em;
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
 }
 
 div.card-body p.card-text {
     font-size: 1em;
+    cursor: pointer;
 }
 
 div.card-body a.link-btn {
