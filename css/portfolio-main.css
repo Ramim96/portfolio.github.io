@@ -134,6 +134,8 @@ div.container-fluid div.collapse ul.navbar-nav {
 }
 
 ul.nav-pills > li {
+    display: block;
+    margin: 0 auto;
     width: 100%;
 }
 
