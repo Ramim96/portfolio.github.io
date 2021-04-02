@@ -220,20 +220,22 @@ div.copyrights-container p {
 /* Web-kit scrollbar */
 ::-webkit-scrollbar-track
 {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
-	background-color: rgba(0, 0, 0, 0.3);
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9); */
+    background: none;
 }
 
 ::-webkit-scrollbar
 {
-	width: 8px;
+	width: 7px;
+    background-color: rgba(33, 37, 41, 0.9);
 }
 
 ::-webkit-scrollbar-thumb
 {
-	border-radius: 2px;
-    background: linear-gradient(to left, #3C096C 0%, #5A189A 100%);
+	border-radius: 5px;
+    /* background: linear-gradient(to left, #3C096C 0%, #5A189A 100%); */
+    background-color: rgb(115, 31, 199);
 }
 
 /* Media queries */
@@ -436,7 +438,7 @@ div.copyrights-container p {
     div.header-welcome-section div.header-welcome div.arrow-down-btn {
         top: 90%;
         width: 5%;
-        height: 12%;
+        height: 10%;
     }
 
     /* Footer section style */
