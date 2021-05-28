@@ -43,7 +43,7 @@ div.about-card-container p.about-info {
 }
 
 div.about-card-container a.btn-cv {
-    margin: 0 0 4% 4%;
+    margin: 0 0 5% 8%;
     padding: 2%;
     border: none;
     border-radius: 5px;
@@ -65,22 +65,35 @@ div.about-card-container a.btn-cv:focus, a.btn-cv:active {
 
 /* Media queries */
 @media only screen and (min-width: 360px) {
-    
+    div.about-card-container a.btn-cv {
+        margin: 0 0 5% 7%;
+    }
 }
 
 @media only screen and (min-width: 460px) {
-
+    div.about-card-container a.btn-cv {
+        margin: 0 0 5% 5%;
+    }
 }
 
 @media only screen and (min-width: 576px) {
-    
+    div.about-card-container a.btn-cv {
+        margin: 0 0 4% 4%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-   
+    div.about-card-container a.btn-cv {
+        margin: 0 0 3% 3%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+    div.about-card-container a.btn-cv {
+        margin: 0 0 2% 2%;
+        padding: 1.5%;
+    }
+
     /* About section */
     div.about-container {
         height: 100vh;
