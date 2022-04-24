@@ -1,0 +1,286 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* Skills main container */
+main.portfolio-content div.skills-container {
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: auto;
+    font-family: 'Rubik', sans-serif;
+    background-image: url("../assets/images/Background_14.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Soft skills style */
+div.skills-container div.soft-skills-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+div.soft-skills-container p.soft-skills-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 3% 0 0 0;
+    padding: 4%;
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+div.soft-skills-container div.skill p.skill-icon, p.skill-title, p.skill-info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Soft skill container */
+div.soft-skills-container div.skill {
+    margin: 4% auto;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* backdrop-filter: blur(5px); */
+}
+
+div.skill p.skill-icon {
+    margin: 0;
+    padding: 4% 0;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+div.skill p.skill-title {
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 90%;
+    font-size: 1.6em;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(123, 44, 191, 0.9);
+}
+
+div.skill p.skill-info {
+    margin: 0;
+    padding: 5% 5%;
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color:rgba(0, 0, 0, 1);
+}
+
+/* Technical skills style */
+div.skills-container div.tech-skills-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.tech-skills-container p.tech-skills-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 4% 0 0 0;
+    padding: 4%;
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+div.tech-skills-container div.tech-skills {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 2% auto;
+    padding: 0;
+    width: 90%;
+    height: auto;
+}
+
+div.tech-skills div.skill-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2%;
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+    width: 45%;
+    height: 22vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* backdrop-filter: blur(5px); */
+}
+
+div.skill-item div.tech-skill-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 2%;
+    width: auto;
+    height: auto;
+}
+
+div.skill-item div.tech-skill-icon img {
+    width: 60%;
+}
+
+/* Media queries */
+@media only screen and (min-width: 360px) {
+   
+}
+
+@media only screen and (min-width: 460px) {
+    /* Soft skills style */
+    div.soft-skills-container p.soft-skills-title {
+        padding: 2%;
+    }
+
+    div.skill p.skill-icon {
+        font-size: 3.5em;
+    }
+
+    
+    div.skill p.skill-title {
+        font-size: 1.8em;
+    }
+
+    /* Technical skills style */
+    div.tech-skills-container p.tech-skills-title {
+        padding: 2%;
+    }
+
+    div.tech-skills div.skill-item {
+        padding: 5%;
+        width: 35%;
+    }
+
+    div.skill-item div.tech-skill-icon img {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    /* Soft skills style */
+    div.soft-skills-container p.soft-skills-title {
+        font-size: 4em;
+        letter-spacing: 0.05;
+    }
+
+    div.soft-skills-container div.skill {
+        width: 70%;
+    }
+
+    /* Technical skills style */
+    div.tech-skills-container p.tech-skills-title {
+        font-size: 4em;
+        letter-spacing: 0.05;
+    }
+
+    div.tech-skills-container div.tech-skills {
+        width: 100%;
+    }
+
+    div.tech-skills div.skill-item {
+        width: 25%;
+    }
+
+    div.skill-item div.tech-skill-icon img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Soft skills style */
+    div.skill p.skill-title {
+        font-size: 1.6em;
+    }
+
+    div.soft-skills-container div.skill {
+        margin: 3% auto;
+        width: 45%;
+    }
+
+    /* Technical skills style */
+    div.tech-skills-container div.tech-skills {
+        width: 95%;
+    }
+
+    div.tech-skills div.skill-item {
+        padding: 3%;
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Soft skills style */
+    div.soft-skills-container div.skill {
+        width: 45%;
+    }
+
+    div.soft-skills-container p.soft-skills-title {
+        font-size: 3.5em;
+    }
+
+    /* Technical skills style */
+    div.tech-skills-container div.tech-skills {
+        width: 85%;
+    }
+
+    div.tech-skills div.skill-item {
+        padding: 2%;
+        width: 15%;
+    }
+
+    div.tech-skills-container p.tech-skills-title {
+        font-size: 3.5em;  
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Soft skills style */
+    div.soft-skills-container div.skill {
+        width: 40%;
+    }
+
+    /* Technical skills style */
+    div.tech-skills-container div.tech-skills {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Soft skills style */
+    div.soft-skills-container div.skill {
+        width: 30%;
+    }
+
+    div.tech-skills div.skill-item {
+        width: 13%;
+    }
+}

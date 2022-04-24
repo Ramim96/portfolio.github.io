@@ -1,0 +1,475 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* DOM reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+}
+
+/* Boostrap class reset */
+div.container-fluid {
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Parallax background style */
+div.header-welcome-section {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.header-welcome-section {
+    background-image: url("../assets/images/Background_17.jpg");
+} 
+
+/* Home-Header section atyle */
+div.header-welcome-section div.header-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* Logo image style */
+div.header-welcome-section div.header-welcome img.logo-brand {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    width: 65%;
+    transform: translate(-50%, -50%);
+}
+
+/* Text carousel style */
+div.header-welcome-section div.header-welcome div.carousel {
+    position: absolute;
+    top: 65%;
+    left:50%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 25%;
+    transform: translate(-50%, -50%);
+}
+
+div.header-welcome div.carousel div.carousel-inner, div.carousel-inner div.carousel-item {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.carousel-inner div.carousel-item p.text-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.3em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Arrow button style */
+div.header-welcome-section div.header-welcome div.arrow-down-btn {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 12%;
+    transform: translate(-50%, -50%); 
+}
+
+/* Navabar style */
+nav.navbar div.container-fluid {
+    width: 90%;
+}
+
+div.container-fluid button.navbar-toggler {
+    margin: 0 2% 0 0;
+}
+
+div.container-fluid a.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div.container-fluid div.collapse ul.navbar-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
+}
+
+ul.nav-pills > li {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+ul.nav-pills > li > a.active {
+    color: rgba(33, 37, 41, 1);
+    background: linear-gradient(to left, #3C096C 0%, #5A189A 100%) !important;
+}
+
+/* Main portfolio section style */
+main.portfolio-content {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Footer section style */
+footer.footer-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(33, 37, 41, 1);
+}
+
+/* Contact details section style */
+footer.footer-section div.contact-details-info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+div.contact-details-info-container div.email-info-container, div.phone-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    font-family: 'Rubik', sans-serif;
+}
+
+div.email-info-container div.email-icon-container, div.phone-info-container div.phone-icon-container i {
+    font-size: 2em;
+}
+
+/* Social media details section style */
+footer.footer-section div.social-media-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+}
+
+div.social-media-info-container div.media-links {
+    font-size: 3.5em;
+}
+
+div.media-links a {
+    color: rgba(255, 255, 255, 1);
+}
+
+div.copyrights-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+div.copyrights-container p {
+    margin: 0;
+    padding: 5%;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Web-kit scrollbar */
+::-webkit-scrollbar-track
+{
+    /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9); */
+    background: none;
+}
+
+::-webkit-scrollbar
+{
+	width: 9px;
+    background-color: rgba(33, 37, 41, 0.9);
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+    /* background: linear-gradient(to left, #3C096C 0%, #5A189A 100%); */
+    background-color: rgb(115, 31, 199);
+}
+
+/* Media queries */
+@media only screen and (min-width: 360px) {
+    /* Logo image style */
+    div.header-welcome-section div.header-welcome img.logo-brand {
+        width: 50%;
+    }
+
+    /* Arrow button style */
+    div.header-welcome-section div.header-welcome div.arrow-down-btn {
+        width: 18%;
+        height: 14%;
+    }
+
+    /* Social media details section style */
+}
+
+@media only screen and (min-width: 460px) {
+    /* Logo image style */
+    div.header-welcome-section div.header-welcome img.logo-brand {
+        top: 30%;
+        width: 45%;
+    }
+
+    /* Arrow button style */
+    div.header-welcome-section div.header-welcome div.arrow-down-btn {
+        width: 14%;
+        height: 12%;
+    }
+
+    /* Navabar style */
+    ul.nav-pills > li {
+        width: 70%;
+    }
+
+    /* Footer section style */
+
+    /* Contact details section style */
+    footer.footer-section div.contact-details-info-container {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    /* Social media details section style */
+    footer.footer-section div.social-media-info-container {
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    /* Logo image style */
+    div.header-welcome-section div.header-welcome img.logo-brand {
+        width: 35%;
+    }
+
+    /* Text carousel style */
+    div.header-welcome-section div.header-welcome div.carousel {
+        top: 65%;
+    }
+
+    /* Navabar style */
+    ul.nav-pills > li {
+        width: 55%;
+    }
+
+    /* Arrow button style */
+    div.header-welcome-section div.header-welcome div.arrow-down-btn {
+        top: 90%;
+        width: 12%;
+        height: 12%;
+    }
+
+    /* Footer section style */
+
+    /* Contact details section style */
+    footer.footer-section div.contact-details-info-container {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    footer.footer-section div.social-media-info-container {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Logo image style */
+    div.header-welcome-section div.header-welcome img.logo-brand {
+        width: 30%;
+    }
+
+    /* Text carousel style */
+    div.header-welcome-section div.header-welcome div.carousel {
+        top: 65%;
+    }
+
+    div.carousel-inner div.carousel-item p.text-item {
+        font-size: 2.5em;
+    }
+
+    /* Arrow button style */
+    div.header-welcome-section div.header-welcome div.arrow-down-btn {
+        top: 90%;
+        width: 8%;
+        height: 12%;
+    }
+
+    /* Navabar style */
+    ul.nav-pills > li {
+        width: 50%;
+    }
+
+    /* Footer section style */
+
+    /* Contact details section style */
+    footer.footer-section div.contact-details-info-container {
+        width: 100%;
+    }
+
+    div.contact-details-info-container div.email-info-container, div.phone-info-container {
+        margin: 0 5%;
+        width: 30%;
+    }
+
+    /* Social media details section style */
+    footer.footer-section div.social-media-info-container {
+        width: 25%;
+    }
+
+    div.copyrights-container p {
+        padding: 2%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* Logo image style */
+    div.header-welcome-section div.header-welcome img.logo-brand {
+        top: 30%;
+        width: 25%;
+    }
+
+    /* Text carousel style */
+    div.header-welcome-section div.header-welcome div.carousel {
+        height: 20%;
+    }
+
+    div.carousel-inner div.carousel-item p.text-item {
+        font-size: 3.5em;
+    }
+
+    /* Arrow button style */
+    div.header-welcome-section div.header-welcome div.arrow-down-btn {
+        top: 90%;
+        width: 6%;
+        height: 12%;
+    }
+
+    /* Navabar style */
+    div.container-fluid div.collapse ul.navbar-nav {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    ul.nav-pills > li {
+        width: 50%;
+    }
+
+    /* Footer section style */
+
+    /* Contact details section style */
+    div.contact-details-info-container div.email-info-container, div.phone-info-container {
+        width: 25%;
+    }
+
+    /* Social media details section style */
+    footer.footer-section div.social-media-info-container {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Logo image style */
+    div.header-welcome-section div.header-welcome img.logo-brand {
+        top: 30%;
+        width: 20%;
+    }
+
+    /* Text carousel style */
+    div.header-welcome-section div.header-welcome div.carousel {
+        top: 60%;
+    }
+
+    div.carousel-inner div.carousel-item p.text-item {
+        font-size: 3.5em;
+    }
+
+    /* Arrow button style */
+    div.header-welcome-section div.header-welcome div.arrow-down-btn {
+        top: 90%;
+        width: 5%;
+        height: 10%;
+    }
+
+    /* Footer section style */
+
+    /* Contact details section style */
+    div.contact-details-info-container div.email-info-container, div.phone-info-container {
+        margin: 0 10%;
+        width: 22%;
+    }
+
+    /* Social media details section style */
+}
+
+@media only screen and (min-width: 1200px) {
+    /* Text carousel style */
+    div.header-welcome-section div.header-welcome div.carousel {
+        top: 65%;
+    }
+
+     /* Navabar style */
+    div.container-fluid div.collapse ul.navbar-nav {
+        flex-direction: row;
+        width: 65%;
+    }
+
+    div.carousel-inner div.carousel-item p.text-item {
+        font-size: 3.5em;
+    }
+
+    /* Contact details section style */
+    div.contact-details-info-container div.email-info-container, div.phone-info-container {
+        width: 20%;
+    }
+}

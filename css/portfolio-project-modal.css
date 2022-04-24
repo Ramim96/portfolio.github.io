@@ -1,0 +1,57 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* Modal section container */
+div.modal {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+div.modal div.modal-content {
+    background-color: rgba(33, 37, 41, 1);
+}
+
+div.modal-content h5.modal-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: rgba(224, 170, 255, 0.8);
+}
+
+div.modal-content div.modal-body h5.section-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: rgba(224, 170, 255, 0.8);
+}
+
+div.modal-content div.modal-body p.project-details {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 1);
+}
+
+div.modal-content div.modal-body ul.project-tools {
+    list-style-type: square;
+}
+
+div.modal-body ul.project-tools li.project-tool {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 1);
+}
+
+div.modal-content div.modal-footer a.btn  {
+    text-decoration: none;
+}
+
+div.modal-footer a.btn, button.btn  {
+    width: 30%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+}

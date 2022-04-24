@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="icon" href="./assets/icons/Brand.png" />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+          integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/portfolio-main.css" type="text/css" />
+    <link rel="stylesheet" href="./css/portfolio-project-modal.css" type="text/css" />
+    <link rel="stylesheet" href="./css/portfolio-about.css" type="text/css" />
+    <link rel="stylesheet" href="./css/portfolio-timeline.css" type="text/css" />
+    <link rel="stylesheet" href="./css/portfolio-skills.css" type="text/css" />
+    <link rel="stylesheet" href="./css/portfolio-projects.css" type="text/css" />
+    <link rel="stylesheet" href="./css/portfolio-contact.css" type="text/css" />
+
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Ramim Uddin</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" tabindex="0">
+    <!-- Modal for my shelf project -->
+    <div class="modal fade" id="myShelfProj" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">My Shelf</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="section-title">Introduction</h5>
+                    <p class="project-details">
+                        The project aim is to provide an open platform that suggests users books to read.
+                        <br />
+                        The project can allow anyone to create, edit or remove a book record; thus, no registration
+                        is required to access from the service.
+                        <br />
+                        <br />
+                        IMPORTANT - To fill-up the input forms, the "Home" section provides a link referencing 
+                        the source to consult and find the required data. Some input fields, such as "genre" and "author",
+                        may require comma separated values.
+                    </p>
+                    <h5 class="section-title">Tech-Stack</h5>
+                    <ul class="project-tools">
+                        <li class="project-tool">HTML</li>
+                        <li class="project-tool">CSS</li>
+                        <li class="project-tool">JavaScript</li>
+                        <li class="project-tool">ASP.NET Core</li>
+                        <li class="project-tool">C#</li>
+                        <li class="project-tool">SQL</li>
+                        <li class="project-tool">Relational DB</li>
+                    </ul>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center align-items-center">
+                    <a href="http://myshelf.ramimuddin.co.uk/" target="_blank"
+                        class="btn btn-success" rel="noopener noreferrer">Demo</a>
+                    <a href="https://github.com/Ramim96/MyShelf" target="_blank"
+                        class="btn btn-primary" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for community project -->
+    <div class="modal fade" id="community" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Community</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="section-title">Introduction</h5>
+                    <p class="project-details">
+                        The project aim is to provide a platform for movies and series lovers, where users can create and edit 
+                        watchlists containing items to watch.
+                        <br />
+                        <br />
+                        Users will be responsible to create new movies and series items, as the application does not contain 
+                        and entire database. In addition, no registration is required to access the service.
+                        <br />
+                        To add movies and series in any watchlist, it is important that the item is already registered in the database.
+                        <br />
+                        <br />
+                        IMPORTANT - To fill-up the input forms, the "Home" section provides references of sources to find 
+                        the required data, and additional video tutorials to ease the input process. 
+                        <br />
+                        Some input fields, such as "genres", "actors" "directors" and "creators"
+                        may require comma separated values.
+                    </p>
+                    <h5 class="section-title">Tech-Stack</h5>
+                    <ul class="project-tools">
+                        <li class="project-tool">HTML</li>
+                        <li class="project-tool">CSS</li>
+                        <li class="project-tool">JavaScript</li>
+                        <li class="project-tool">ASP.NET Core</li>
+                        <li class="project-tool">C#</li>
+                        <li class="project-tool">SQL</li>
+                        <li class="project-tool">Relational DB</li>
+                    </ul>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center align-items-center">
+                    <a href="http://community.ramimuddin.co.uk/" target="_blank" class="btn btn-success"
+                        rel="noopener noreferrer">Demo</a>
+                    <a href="https://github.com/Ramim96/Community" target="_blank" class="btn btn-primary"
+                        rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for guess the word game project -->
+    <div class="modal fade p-0" id="guessTheWordGameProj" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Guess The Word</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="section-title">Introduction</h5>
+                    <p class="project-details">
+                        The project is a simple guess the word game, where the player will be 
+                        provided with 8 lifes.
+                        <br />
+                        <br />
+                        The user must submit only one character, otherwise error messages will be thrown
+                        underneath the letters output (no life will be deducted). 
+                        <br />
+                        <br />
+                        The user will be able to see, thanks to the letters button, which letters
+                        have been provided as well as the correct or wrong guess.
+                    </p>
+                    <h5 class="section-title">Tech-Stack</h5>
+                    <ul class="project-tools">
+                        <li class="project-tool">HTML</li>
+                        <li class="project-tool">CSS</li>
+                        <li class="project-tool">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center align-items-center">
+                    <a href="https://ramim96.github.io/javascript.github.io/GuessTheWordGame/" 
+                       target="_blank" class="btn btn-success" rel="noopener noreferrer">Demo</a>
+                    <a href="https://github.com/Ramim96/javascript.github.io/tree/master/GuessTheWordGame" 
+                       target="_blank" class="btn btn-primary" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for expense tracker project -->
+    <div class="modal fade" id="expenseTrackerProj" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Expense Tracker</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5 class="section-title">Introduction</h5>
+                    <p class="project-details">
+                        The project is designed to allow the user to insert items that have
+                        been either purchased or sold. 
+                        <br />
+                        <br />
+                        The user needs to provide the details in the bottom section; respectively,
+                        the item name, the cost, that can be a decimal number 
+                        (don't use comma but full-stop for the decimal point), and select either the
+                        expense or earning option.
+                        <br />
+                        <br />
+                        The project will store the items, and the respective data, in the local-storage 
+                        of the browser rendering the project itself.
+                        <br />
+                        Since it is the local-storage, the data will be persistent unless the user cleans it
+                        from the dev-tools or removes the items from the project. 
+                        <br />
+                        <br />
+                        To place multiple same items, I would suggest to add the number preceded with an underscore
+                        as the local-storage does not store muliple keys with the same name
+                        (Example: Bread, Bread_2).
+                    </p>
+                    <h5 class="section-title">Tech-Stack</h5>
+                    <ul class="project-tools">
+                        <li class="project-tool">HTML</li>
+                        <li class="project-tool">CSS</li>
+                        <li class="project-tool">JavaScript</li>
+                    </ul>
+                </div>
+                <div class="modal-footer d-flex flex-row justify-content-center align-items-center">
+                    <a href="https://ramim96.github.io/javascript.github.io/ExpenseTracker/" 
+                       target="_blank" class="btn btn-success" rel="noopener noreferrer">Demo</a>
+                    <a href="https://github.com/Ramim96/javascript.github.io/tree/master/ExpenseTracker" 
+                       target="_blank" class="btn btn-primary" rel="noopener noreferrer">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home-Header section -->
+    <div id="home" class="header-welcome-section container-fluid rellax" data-rellax-speed="-2">
+        <div class="header-welcome">
+            <img class="logo-brand" src="./assets/icons/Brand.png" alt="Ramim Uddin" />
+
+            <div id="text-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p class="text-item">Hi, I'm Ramim</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-item">I'm a Developer</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-item">I like to design and create apps</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-item">Have a look to my portfolio</p>
+                    </div>
+                    <div class="carousel-item">
+                        <p class="text-item">Browse my projects</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow-down-btn">
+                <a href="#about">
+                    <img src="./assets/icons/ArrowDown_2.svg" alt="About">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Ramim Uddin</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#responsiveNav"
+                aria-controls="responsiveNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="responsiveNav">
+                <ul class="navbar-nav nav-pills d-flex ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#experiences">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Application main content section -->
+    <main class="portfolio-content container-fluid">
+        <div id="about" class="about-container">
+            <div class="about-card-container mx-0 my-0">
+                <p class="about-title mt-5 mt-md-0" data-aos="fade-left" data-aos-duration="1200">About Me</p>
+                <p class="about-info mx-0 my-0 px-4 pt-2 pb-3" data-aos="flip-up" data-aos-duration="1200">
+                    I am a graduate student from Queen Mary University of London, and through education and self-study, I had the
+                    opportunity to improve my skill set over an array of different technologies to work on both front-end and back-end
+                    projects.
+                    <br><br>
+                    I started my path to the technology field in college, with a comprehensive and extensive period of learning over the
+                    basics of programming and web development. Driven by curiosity and interest in development, I decided to move in London
+                    to study at Queen Mary to further expand my knowledge on the best practices to implement engaging and effective systems for
+                    the users/clients.
+                    <br><br>
+                    I also have a strong interest in user interfaces (UI) design and implementation as well as in both front-end and back-end development.
+                </p>
+                <!-- CV file download link -->
+                <a class="btn btn-cv" href="./files/CV.pdf" download="ramim-uddin-cv.pdf" data-aos="fade-right" data-aos-duration="1200">Download CV</a>
+            </div>
+        </div>
+        <!-- Experiences section -->
+        <div id="experiences" class="container-fluid timeline-container d-flex flex-column justify-content-center align-items-start mx-0 my-0 px-0 py-0">
+            <p class="experiences-title mt-5" data-aos="fade-right" data-aos-duration="1200">Experiences</p>
+            <ul class="timeline-list d-flex justify-content-center align-items-center mx-0 mt-0 mb-3 px-0 py-0">
+                <span class="time"></span>
+                
+                <li class="timeline-item mt-3">
+                    <div class="timeline-item-container mx-0 my-0" data-aos="flip-up" data-aos-duration="1200">
+                        <p class="time-title mx-0 my-0 px-4 py-2">Software Engineering Virtual Experience, J.P. Morgan</p>
+                        <p class="time-date mx-0 my-0 px-4 py-1 text-muted">London, UK, 3rd Jul 2020 – 5th Jul 2020</p>
+                        <p class="time-info mx-0 my-0 px-4 py-3">
+                            The software engineering virtual internship provided the opportunity to make some
+                            experience with Typescript through ReactJS. 
+                            <br /><br />
+                            The course gave a detailed undersanding of Typescript complexity and syntax 
+                            as well as the differences with traditional JavaScript code.
+                            <!-- The text below is an alternative; thus uncomment it and comment the text above -->
+                            <!-- The Forage website provides several virtual work course opportunities for youngsters willing to improve their
+                            professional background. 
+                            <br><br>
+                            I took the opportunity to work on a virtual experience with J.P. Morgan, and completed
+                            exercises based on the use of ReactJS and Typescript. 
+                            <br><br>
+                            Even though it was not a longer and complete experience, it gave a
+                            good understanding about the complexity of Typescript, understand the difference with traditional JavaScript, and
+                            further practice with ReactJS. -->
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline-item mt-3">
+                    <div class="timeline-item-container mx-0 my-0" data-aos="flip-up" data-aos-duration="1200">
+                        <p class="time-title mx-0 my-0 px-4 py-2">Bright Network Technology Virtual Internship</p>
+                        <p class="time-date mx-0 my-0 px-4 py-1 text-muted">London, UK, 30th Jun 2020 – 2nd Jul 2020</p>
+                        <p class="time-info mx-0 my-0 px-4 py-3">
+                            The virtual internship gave the opportunity to gain additional knowledge about the 
+                            good practices in software development and agile/scrum development methodology.
+                            <br /><br />
+                            The covered materials have been put into practice by designing a development plan for a project.
+                            <br /><br />
+                            The deliverables have been assigned before hand in order to work on the solution.
+                            <!-- The text below is an alternative; thus uncomment it and comment the text above -->
+                            <!-- The Bright Network virtual programme was designed for all those students trying to get into employment during
+                            the pandemic. 
+                            <br><br>
+                            Thanks to such experience, I gained knowledge about the good practices in software development, especially
+                            the application of the agile/scrum development methodology. -->
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline-item mt-3">
+                    <div class="timeline-item-container mx-0 my-0" data-aos="flip-up" data-aos-duration="1200">
+                        <p class="time-title mx-0 my-0 px-4 py-2">BCs ICT Queen Mary University of London</p>
+                        <p class="time-date mx-0 my-0 px-4 py-1 text-muted">London, UK, Sept 2016 – Jul 2019</p>
+                        <p class="time-info mx-0 my-0 px-4 py-3">
+                            The experience at Queen Mary was focused on learning a variety of concepts related to the 
+                            software and web development practices. 
+                            <br /><br />
+                            Some of these include: the life-cycle development process of web applications and web pages,
+                            and the concepts of Graphical User Interfaces (GUI), and User Experience (UX).
+                            <!-- The range of technologies I had some experience with are 
+                            The experience was challenging and fun at the same time, as I met different peers and
+                            lecturers that helped me in my personal development, taught me new concepts and technologies, 
+                            such as the UX/UI, GUI, and web frameworks like Django. -->
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline-item mt-3">
+                    <div class="timeline-item-container mx-0 my-0" data-aos="flip-up" data-aos-duration="1200">
+                        <p class="time-title mx-0 my-0 px-4 py-2">Team member, SSP (Selected Service Partner)</p>
+                        <p class="time-date mx-0 my-0 px-4 py-1 text-muted">London, UK, March 2016 – Dec 2018</p>
+                        <p class="time-info mx-0 my-0 px-4 py-3">
+                            After moving in London, I started working as a team member for the retail company Selected Service Partner Group. 
+                            <br /><br />
+                            The intensive work with my colleagues helped me to develop and improve my soft-skills, including: communication,
+                            team-working, customer service, time and task-management.
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline-item mt-3">
+                    <div class="timeline-item-container mx-0 my-0" data-aos="flip-up" data-aos-duration="1200">
+                        <p class="time-title mx-0 my-0 px-4 py-2">Full-Stack Developer Internship, Softlab S.p.A.</p>
+                        <p class="time-date mx-0 my-0 px-4 py-1 text-muted">London, UK, Apr 2015 – May 2015</p>
+                        <p class="time-info mx-0 my-0 px-4 py-3">
+                            The internship was an opportunity to get experience in the software and web development field.
+                            <br /><br />
+                            My whole team worked on the development of a web site using different front-end and back-end
+                            technologies such as: HTML, CSS, JavaScript, PHP, and MySQL.
+                            <br /><br />
+                            The whole experience convinced me to further progress with my web development education in London.
+                        </p>
+                    </div>
+                </li>
+                <li class="timeline-item mt-3">
+                    <div class="timeline-item-container mx-0 my-0" data-aos="flip-up" data-aos-duration="1200">
+                        <p class="time-title mx-0 my-0 px-4 py-2">ICT I.I.S. Federico Caffé High School</p>
+                        <p class="time-date mx-0 my-0 px-4 py-1 text-muted">Rome, Italy, Sept 2010 – Jun 2015</p>
+                        <p class="time-info mx-0 my-0 px-4 py-3">
+                            This was the starting point, where I grew in myself the interest in web development and learned the basic
+                            web technologies, such as: PHP, HTML, CSS, and MySQL.
+                            <br /><br />
+                            At the end of the final year, I completed the national exams and achieved a grade of 95/100, that granted me a place at
+                            Queen Mary University of London.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Skills section -->
+        <div id="skills" class="container-fluid skills-container rellax">
+            <div class="soft-skills-container">
+                <p class="soft-skills-title mt-5" data-aos="fade-left" data-aos-duration="1200">Soft Skills</p>
+                <div class="skill" data-aos="zoom-in" data-aos-duration="1200">
+                    <p class="skill-icon">
+                        <i class="far fa-comments"></i>
+                    </p>
+                    <p class="skill-title">Communication</p>
+                    <p class="skill-info">
+                        The general customer services and team working experiences contributed on the development of my communication skills.
+                        Particularly, It has been essential in my education as I was more confident when talking to and working with other peers
+                        over the various group projects/courseworks.
+                        <!-- I have gained good communication skills through my previous retail work experience at SSP Group
+                        as well as at university, by addressing customer concerns, work actively with my team members, and 
+                        with my university peers over complex group projects. -->
+                    </p>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-duration="1200">
+                    <p class="skill-icon">
+                        <i class="far fa-lightbulb"></i>
+                    </p>
+                    <p class="skill-title">Problem Solving</p>
+                    <p class="skill-info">
+                        Addressing problems with effective solutions is a very demanded skill in the job market. To tackle a problem, is
+                        important to break it down into simple bits, and target them one at a time.
+                    </p>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-duration="1200">
+                    <p class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </p>
+                    <p class="skill-title">Team Work</p>
+                    <p class="skill-info">
+                        My team working experiences not only helped me to tackle challenging problems, but contributed in my personal
+                        development. I was able to learn new practices, concepts and technologies through the constant interaction with my peers.
+                        <!-- Working in a team can guarantee more brain power to tackle challenging problems. It has been one of the best bits of my
+                        experiences, as every person I interacted and worked with shared its knowledge and experience to help me understand 
+                        how to apporach complex problems and develop efficient solutions. -->
+                    </p>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-duration="1200">
+                    <p class="skill-icon">
+                        <i class="far fa-clock"></i>
+                    </p>
+                    <p class="skill-title">Time Management</p>
+                    <p class="skill-info">
+                        Time management has been pivotal to achieve my tasks during my education and work experiences. Such skill can help to be multitasking 
+                        and tackle several problems to multiple related, or indipendent, objectives. 
+                    </p>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-duration="1200">
+                    <p class="skill-icon">
+                        <i class="fas fa-folder"></i>
+                    </p>
+                    <p class="skill-title">Organization</p>
+                    <p class="skill-info">
+                        Being organised is essential to be proficient in your job, reduce the stress levels, and meet your deadlines. My
+                        education and work experiences required a constant time management to achieve the main objectives with the
+                        appropriate solution.
+                        <!-- Being organised is essential to be proficient in your job, and it particularly involves the application of time
+                        management and problem-solving skills to meet deadlines, be more productive and reduce the level of stress. My
+                        educational and work experiences required high level of organisational skills to tackle several challenges, related to
+                        different contexts, and achieve the best results. -->
+                    </p>
+                </div>
+                <div class="skill" data-aos="zoom-in" data-aos-duration="1200">
+                    <p class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </p>
+                    <p class="skill-title">Coding</p>
+                    <p class="skill-info">
+                        Through my school group projects/courseworks, I was able to learn and put into practice technologies such as: HTML, CSS, JavaScript, Python and SQL, 
+                        to create web sites and applications with appealing and user-friendly interfaces.
+                        <!-- My high school and university experiences provided me the opportunities to learn how to use new technologies to build
+                        fully fledge applications. By learning the key concepts of programming, both front-end and beck-end, I was able to work
+                        over interesting group projects/courseworks that tested my knowledge and helped me to learn something new related either
+                        to standard programming or UX/UI. -->
+                    </p>
+                </div>
+            </div>
+            <div class="tech-skills-container">
+                <p class="tech-skills-title" data-aos="fade-right" >Technical Skills</p>
+                <div class="tech-skills">
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/html.png" alt="HTML5">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/css3.png" alt="CSS3">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/javascript.png" alt="JavaScript">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/nodejs.png" alt="NodeJS">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/java.png" alt="Java">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/c.png" alt="C#">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/python.png" alt="Python">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/php.png" alt="PHP">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/reactjs.png" alt="ReactJS">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/sql.png" alt="SQL">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/mongodb.png" alt="MongoDB">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/mysql.png" alt="MySQL">
+                        </div>
+                    </div>
+                    <div class="skill-item" data-aos="flip-right" data-aos-duration="1200">
+                        <div class="tech-skill-icon">
+                            <img src="./assets/images/bootstrap.png" alt="Bootstrap">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects section -->
+        <div id="projects" class="container-fluid projects-container">
+            <p class="projects-title mt-5" data-aos="fade-left" data-aos-duration="1200">My Projects</p>
+            <div class="projects-list-container">
+                <!-- Project my shelf -->
+                <div class="project-item" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/MyShelf.png" class="card-img" alt="My Shelf" data-bs-toggle="modal"
+                                data-bs-target="#myShelfProj" />
+                
+                            <p class="card-title" data-bs-toggle="modal" data-bs-target="#myShelfProj">MyShelf</p>
+                            <p class="card-text" data-bs-toggle="modal" data-bs-target="#myShelfProj">Click here to see details</p>
+                
+                            <a href="http://myshelf.ramimuddin.co.uk/" target="_blank" class="link-btn" rel="noopener noreferrer">
+                                <button class="btn btn-primary">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project community -->
+                <div class="project-item" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./assets/images/Community.png" class="card-img" alt="Community" data-bs-toggle="modal"
+                                data-bs-target="#community" />
+                
+                            <p class="card-title" data-bs-toggle="modal" data-bs-target="#community">Community</p>
+                            <p class="card-text" data-bs-toggle="modal" data-bs-target="#community">Click here to see details</p>
+                
+                            <a href="http://ramimuddin-002-site1.dtempurl.com" target="_blank" class="link-btn" rel="noopener noreferrer">
+                                <button class="btn btn-primary">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project guess the word game -->
+                <div class="project-item"data-aos="fade-up" data-aos-duration="1200">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- 
+                                To make the image redirect to the project, uncomment the section below and change the CSS
+                                In the CSS you must uncomment two styles and comment the two following below
+                            -->
+                            <!-- <a href="https://ramim96.github.io/javascript.github.io/GuessTheWordGame/"  target="_blank" class="project-link" rel="noopener noreferrer">
+                                <img src="./assets/images/GuessTheWord.png" class="card-img" alt="Guess The Word">
+                            </a> -->
+
+                            <img src="./assets/images/GuessTheWord.png" class="card-img" alt="Guess The Word" data-bs-toggle="modal" data-bs-target="#guessTheWordGameProj" />
+                            
+                            <p class="card-title" data-bs-toggle="modal" data-bs-target="#guessTheWordGameProj">Guess The Word</p>
+                            <p class="card-text" data-bs-toggle="modal" data-bs-target="#guessTheWordGameProj">Click here to see details</p>
+
+                            <a href="https://ramim96.github.io/javascript.github.io/GuessTheWordGame/" target="_blank" class="link-btn" rel="noopener noreferrer">
+                                <button class="btn btn-primary">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project expense tracker -->
+                <div class="project-item" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <a href="https://ramim96.github.io/javascript.github.io/ExpenseTracker/" target="_blank" class="project-link" rel="noopener noreferrer">
+                                <img src="./assets/images/ExpenseTracker.png" class="card-img" alt="Expense Tracker">
+                            </a> -->
+
+                            <img src="./assets/images/ExpenseTracker.png" class="card-img" alt="Expense Tracker" data-bs-toggle="modal" data-bs-target="#expenseTrackerProj" />
+
+                            <p class="card-title" data-bs-toggle="modal" data-bs-target="#expenseTrackerProj">Expense Tracker</p>
+                            <p class="card-text" data-bs-toggle="modal" data-bs-target="#expenseTrackerProj">Click here to see details</p>
+
+                            <a href="https://ramim96.github.io/javascript.github.io/ExpenseTracker/" target="_blank" class="link-btn" rel="noopener noreferrer">
+                                <button class="btn btn-primary">Demo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyrights to JUST IT for the mark-up below -->
+        <!-- Contact Me section -->
+        <div id="contact" class="container-fluid contact-container rellax">
+            <p class="contact-details-title mt-5 mb-1 my-0 py-4" data-aos="fade-right" data-aos-duration="1200">Contact Me</p>
+
+            <div class="row mx-0 px-0 py-0" data-aos="fade-left" data-aos-duration="1200">
+                <!-- Contact Form -->
+                <!-- Email address and subject line for the contact form set in bin/contact_me.php file. -->
+                <!-- <div class="col-md-2 mx-0 my-0 px-0 py-1"></div> -->
+                <div id="emailForm" class="contact-form-container col-md-4 mx-auto mb-4 py-0 px-0">
+                    <div class="row mx-0 my-0 px-0 py-0">
+                        <div class="col-md-12">
+                            <form name="sentMessage" id="contactForm">
+                                <div class="control-group form-group mt-4 mb-2">
+                                    <div class="controls">
+                                        <input type="text" class="form-control" id="name" placeholder="Enter name here" 
+                                                required data-validation-required-message="Please enter your name.">
+                                        <p class="help-block"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group my-2">
+                                    <div class="controls">
+                                        <input type="tel" class="form-control" id="phone" placeholder="Enter phone number here" 
+                                                required data-validation-required-message="Please enter your phone number.">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group my-2">
+                                    <div class="controls">
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email here" 
+                                                required data-validation-required-message="Please enter your email address.">
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="control-group form-group my-2">
+                                    <div class="controls">
+                                        <textarea rows="5" cols="100" class="form-control" id="message" 
+                                                    required data-validation-required-message="Please enter your message" maxlength="999"
+                                                    style="resize:none" placeholder="Enter your message here">
+                                        </textarea>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div id="success" class="my-2"></div>
+                                <!-- For success/fail messages -->
+                                <div id="submitButtonDiv" class="btn-container d-flex justify-content-center my-3">
+                                    <button type="submit" id="submitButton" class="btn btn-lg btn-primary">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!--col-->
+                    </div>
+                    <!--row-->
+                </div>
+                <!--end email form -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer id="footer-section" class="footer-section">
+        <div class="contact-details-info-container my-4">
+            <div class="email-info-container">
+                <div class="email-icon-container">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="email-container">
+                    <p class="d-flex align-items-center mx-1 my-1">ramim.uddin@gmail.com</p>
+                </div>
+            </div>
+            <div class="phone-info-container"> 
+                <div class="phone-icon-container">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="phone-container">
+                    <p class="d-flex align-items-center mx-1 my-1">+44 7448969750 &nbsp; UK</p>
+                    <p class="d-flex align-items-center mx-1 my-1">+39 3403760813 &nbsp; IT</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="social-media-info-container">
+            <div class="linkedin media-links">
+                <a href="https://www.linkedin.com/in/ramim-uddin" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="github media-links">
+                <a href="https://github.com/Ramim96" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="copyrights-container">
+            <p>Copyright &copy; Ramim Uddin <script>document.write(new Date().getFullYear());</script></p>
+        </div>
+    </footer>
+
+    <!-- Boostrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+            integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+            integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+    </script>
+
+    <!-- Animate On Scroll script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+            crossorigin="anonymous">
+    </script>
+
+    <script src="./scripts/lib/jqBootstrapValidation.js"></script>
+
+    <!-- Script -->
+    <script src="./scripts/script.js" type="application/javascript"></script>
+    <script src="./scripts/contact_me.js" type="application/javascript"></script>
+</body>
+</html>

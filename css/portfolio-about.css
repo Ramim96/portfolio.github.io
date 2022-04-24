@@ -1,0 +1,113 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/* About section timeline container */
+div.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(33, 37, 41, 1);
+}
+
+div.about-container div.about-card-container {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    width: 90%;
+    height: auto;
+    font-family: 'Rubik', sans-serif;
+}
+
+div.about-card-container p.about-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 3% 0 0 0;
+    padding: 4%;
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(224, 170, 255, 0.8);
+}
+
+div.about-card-container p.about-info {
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    color: rgba(230, 230, 233, 1);
+}
+
+div.about-card-container a.btn-cv {
+    margin: 0 0 5% 8%;
+    padding: 2%;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    color: rgba(230, 230, 233, 1);
+    background: linear-gradient(to left, #3C096C 0%, #5A189A 100%);
+    cursor: pointer;
+}
+
+div.about-card-container a.btn-cv:focus, a.btn-cv:active {
+    box-shadow: none;
+    outline: none !important;
+}
+
+/* Media queries */
+@media only screen and (min-width: 360px) {
+    div.about-card-container a.btn-cv {
+        margin: 0 0 5% 7%;
+    }
+}
+
+@media only screen and (min-width: 460px) {
+    div.about-card-container a.btn-cv {
+        margin: 0 0 5% 5%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    div.about-card-container a.btn-cv {
+        margin: 0 0 4% 4%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div.about-card-container a.btn-cv {
+        margin: 0 0 3% 3%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    div.about-card-container a.btn-cv {
+        margin: 0 0 2% 2%;
+        padding: 1.5%;
+    }
+
+    /* About section */
+    div.about-container {
+        height: 100vh;
+    }
+
+    div.about-card-container p.about-title {
+        font-size: 3.5em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
